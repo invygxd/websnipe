@@ -1,0 +1,1 @@
+const x=require("express"),a=require("axios"),p=x(),_=3000;p.use(x.json()),p.get("/proxy",async(q,s)=>{let t=q.query.url;if(!t)return s.status(400).json({e:"no url"});try{let r=await a.get(t,{headers:{"User-Agent":"ws/1"}});s.json({h:r.headers,b:r.data})}catch(r){s.status(500).json({e:r.message})}}),p.listen(_,()=>{console.log(`proxy @ ${_}`)});
