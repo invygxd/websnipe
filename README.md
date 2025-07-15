@@ -1,3 +1,7 @@
+# yes
+code is unreadable
+cry about it
+
 # what it do
 headers: pulls all via proxy
 paths: rips links/forms
